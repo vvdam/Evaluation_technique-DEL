@@ -1,7 +1,7 @@
 
 # Evaluation technique-DEL de Adam Maaloul 🧠
 
-## avis bootstrap 🤩
+## Avis bootstrap 🤩
 Outil très intéressant, je n'ai pas eu trop de problèmes, à part lors du placement du footer. La commande 'fixed-bottom' de Bootstrap l'a non seulement collé au sol, mais lui a également donné une propriété 'sticky' qui ne m'a pas plu. J'ai travaillé pour enlever cet effet.
 
 ## About Me 🤔
