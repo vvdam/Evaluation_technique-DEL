@@ -1,35 +1,113 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+{
+    /* Je découvre Bootstrap et je suis extrêmement surpris de sa facilité de prise en main. Je ne l'avais jamais utilisé par le passé et je ne suis pas déçu. */
 }
 
-export default App
+function App() {
+    return (
+        <div
+            style={{
+                display: "flex",
+                flexDirection: "column",
+                minHeight: "100vh",
+            }}
+        >
+            <header
+                style={{
+                    background: "#343a40",
+                    color: "#fff",
+                    padding: "20px",
+                }}
+            >
+                <div className="container">
+                    <h1 className="font-weight-bold">Événement Technologie</h1>
+                </div>
+                <button style={{ marginTop: 20 }}>s'inscrire</button>
+            </header>
+
+            <main className="container my-5">
+                <h2>Programme de l'événement 🚀</h2>
+                <hr />
+                <div className="row">
+                    <div className="col-md-6">
+                        <h3>Journée 1</h3>
+                        <hr />
+                        <ul>
+                            <li>9:00 - Ouverture</li>
+                            <li>
+                                10:00 - Conférence sur l'intelligence
+                                artificielle
+                            </li>
+                            <li>12:00 - Déjeuner</li>
+                            <li>14:00 - Ateliers pratiques</li>
+                            <li>17:00 - Cocktail de réseautage</li>
+                        </ul>
+                    </div>
+                    <div className="col-md-6">
+                        <h3>Journée 2</h3>
+                        <hr />
+                        <ul>
+                            <li>9:00 - Séminaire sur la cybersécurité</li>
+                            <li>
+                                11:00 - Présentation des dernières technologies
+                            </li>
+                            <li>13:00 - Pause déjeuner</li>
+                            <li>
+                                15:00 - Table ronde sur l'avenir de la
+                                technologie
+                            </li>
+                            <li>17:00 - Clôture de l'événement</li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+            <footer
+                style={{
+                    background: "#343a40",
+                    color: "#fff",
+                    padding: "20px",
+                    position: "absolute",
+                    width: "100VW",
+                    bottom: 0,
+                    left: 0,
+                }}
+            >
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <h3>Contact</h3>
+                            <p>Email: info@evenementtechnologie.com</p>
+                            <p>Téléphone: +1234567890</p>
+                        </div>
+                        <div className="col-md-6">
+                            <h3>Liens utiles</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Politique de confidentialité</a>
+                                </li>
+                                <li>
+                                    <a href="#">Conditions d'utilisation</a>
+                                </li>
+                                <li>
+                                    <a href="#">Mentions légales</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/vvdam">
+                                        github
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    );
+}
+
+export default App;
