@@ -75,7 +75,7 @@ function Signup() {
                             onChange={(event) => setEmail(event.target.value)}
                         />
                     </div>
-                    <button type="submit" className="btn btn-primary">
+                    <button type="submit" className=" btn-primary">
                         S'inscrire
                     </button>
                 </div>
