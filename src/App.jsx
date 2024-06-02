@@ -5,9 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { Outlet } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-{
-    /* Je découvre Bootstrap et je suis extrêmement surpris de sa facilité de prise en main. Je ne l'avais jamais utilisé par le passé et je ne suis pas déçu. */
-}
+
+// Je découvre Bootstrap et je suis extrêmement surpris de sa facilité de prise en main. Je ne l'avais jamais utilisé par le passé et je ne suis pas déçu.
 
 function App() {
     return (
