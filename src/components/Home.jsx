@@ -14,12 +14,7 @@ function Home() {
                     <h1 className="font-weight-bold">Événement Technologie</h1>
                 </div>
                 <Link to="/signup">
-                    <button
-                        style={{ marginTop: 20 }}
-                        className="btn btn-primary"
-                    >
-                        S'inscrire
-                    </button>
+                    <button style={{ marginTop: 20 }}>s'inscrire</button>
                 </Link>
             </header>
 

@@ -15,26 +15,25 @@ function App() {
                 display: "flex",
                 flexDirection: "column",
                 minHeight: "100vh",
+                minWidth: "100vw",
             }}
         >
             <Outlet />
-
             <footer
                 style={{
                     background: "#343a40",
                     color: "#fff",
                     padding: "20px",
-                    position: "absolute",
-                    width: "100VW",
-                    bottom: 0,
-                    left: 0,
+                    position: "relative", // Changed from absolute to relative
+                    width: "100%",
+                    marginTop: "auto", // Ensures the footer is pushed to the bottom
                 }}
             >
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
                             <h3>Contact</h3>
-                            <p>Email: maaalouladam@gmail.com</p>
+                            <p>Email: info@evenementtechnologie.com</p>
                             <p>Téléphone: +1234567890</p>
                         </div>
                         <div className="col-md-6">
