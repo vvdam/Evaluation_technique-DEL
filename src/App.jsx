@@ -4,8 +4,6 @@ import viteLogo from "/vite.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
-// Je découvre Bootstrap et je suis extrêmement surpris de sa facilité de prise en main. Je ne l'avais jamais utilisé par le passé et je ne suis pas déçu.
-
 function App() {
     return (
         <div
@@ -13,6 +11,7 @@ function App() {
                 display: "flex",
                 flexDirection: "column",
                 minHeight: "100vh",
+                minWidth: "100vw",
             }}
         >
             <header
@@ -69,10 +68,9 @@ function App() {
                     background: "#343a40",
                     color: "#fff",
                     padding: "20px",
-                    position: "absolute",
-                    width: "100VW",
-                    bottom: 0,
-                    left: 0,
+                    position: "relative", // Changed from absolute to relative
+                    width: "100%",
+                    marginTop: "auto", // Ensures the footer is pushed to the bottom
                 }}
             >
                 <div className="container">
